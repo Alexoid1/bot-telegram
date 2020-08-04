@@ -70,4 +70,4 @@ Telegram::Bot::Client.run(token) do |bot|
     end
   end
 end
-# rubocop:Re-enable, Metrics/BlockLength, Layout/LineLength
+# rubocop:enable, Metrics/BlockLength, Layout/LineLength
