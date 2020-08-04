@@ -1,4 +1,4 @@
-# TIC-TAC-TOE GAME
+# Bot-Telegram
 
 ![Hireable](https://cdn.rawgit.com/hiendv/hireable/master/styles/default/yes.svg)
 
