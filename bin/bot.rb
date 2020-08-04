@@ -1,7 +1,10 @@
+#!/usr/bin/env ruby
 require 'telegram/bot'
 require_relative '../lib/quotes.rb'
 require_relative '../lib/jokes.rb'
 require 'date'
+
+# rubocop:disable Metrics/BlockLength, Layout/LineLength
 token = '1399675839:AAGW44eSHQZ_6J5b7r2GP83IOcan8d7swVk'
 
 puts 'go to the next link to use the bot'
@@ -16,7 +19,6 @@ def interval_joke(time, message)
     @joke = JSON.parse(jok.posts).sample
     bot.api.send_message(chat_id: message.chat.id, text: "Listen this joke #{message.from.first_name}, '#{@joke['content']}")
     bot.api.send_message(chat_id: message.chat.id, text: "#{message.from.first_name} will recive the next joke in #{time} minutes")
-    $bot
   end
 end
 
@@ -30,11 +32,10 @@ def interval_quote(time, message)
     quotes = Quotes.new
     @quo = JSON.parse(quotes.posts).sample
     bot.api.send_message(chat_id: message.chat.id, text: "My advise to you #{message.from.first_name} is: '#{@quo['text']}'\n#{@quo['author']}")
-    $bot
   end
 end
 
-$bot = Telegram::Bot::Client.run(token) do |bot|
+Telegram::Bot::Client.run(token) do |bot|
   quotes = Quotes.new
   jok = Jokes.new
   greeting = ['Hello I am Albot', 'Hello Human', '68 65 6c 6c 6f !!!!Ohhh sorry I just say hello in my native lenguage', 'HI !!!', 'hello there', 'Whats up Dude', 'Hello meat sack... hahaha ']
@@ -71,3 +72,4 @@ $bot = Telegram::Bot::Client.run(token) do |bot|
     end
   end
 end
+# rubocop:enable, Metrics/BlockLength, Layout/LineLength
