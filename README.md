@@ -46,7 +46,10 @@ Go to the project directory and run open the `bin/bot.rb` file on your terminal.
   1. Go to https://web.telegram.org/#/im?p=@Alexoid_bot.
   2. Read the instructions.
   3. Start to use it.
+### Video
 
+- Follow the link 
+  > [video](https://youtu.be/Smp9WRwCCiM)
 
 ## Authors
 
