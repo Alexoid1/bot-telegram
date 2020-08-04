@@ -69,5 +69,6 @@ Telegram::Bot::Client.run(token) do |bot|
       bot.api.send_message(chat_id: message.chat.id, text: "Bye #{message.from.first_name} have a nice day")
     end
   end
+  # rubocop:enable, Metrics/BlockLength, Layout/LineLength
 end
-# rubocop:enable, Metrics/BlockLength, Layout/LineLength
+
