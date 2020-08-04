@@ -4,7 +4,6 @@ require_relative '../lib/quotes.rb'
 require_relative '../lib/jokes.rb'
 require 'date'
 
-# rubocop:disable Metrics/BlockLength, Layout/LineLength
 token = '1399675839:AAGW44eSHQZ_6J5b7r2GP83IOcan8d7swVk'
 
 puts 'go to the next link to use the bot'
@@ -69,6 +68,5 @@ Telegram::Bot::Client.run(token) do |bot|
       bot.api.send_message(chat_id: message.chat.id, text: "Bye #{message.from.first_name} have a nice day")
     end
   end
-  # rubocop:enable, Metrics/BlockLength, Layout/LineLength
 end
 
