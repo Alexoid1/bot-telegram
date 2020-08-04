@@ -11,8 +11,8 @@ puts 'go to the next link to use the bot'
 puts 'https://web.telegram.org/#/im?p=@Alexoid_bot'
 
 def interval_joke(time, message)
-  itsTime = (Time.now + time * 60).strftime('%R')
-  sleep(1) until Time.now.strftime('%R') == itsTime
+  its_time = (Time.now + time * 60).strftime('%R')
+  sleep(1) until Time.now.strftime('%R') == its_time
   token2 = '1399675839:AAGW44eSHQZ_6J5b7r2GP83IOcan8d7swVk'
   Telegram::Bot::Client.run(token2) do |bot|
     jok = Jokes.new
@@ -23,10 +23,8 @@ def interval_joke(time, message)
 end
 
 def interval_quote(time, message)
-  itsTime = (Time.now + time * 60).strftime('%R')
-  p itsTime
-  sleep(1) until Time.now.strftime('%R') == itsTime
-  p 'CONGRATS'
+  its_time = (Time.now + time * 60).strftime('%R')
+  sleep(1) until Time.now.strftime('%R') == its_time
   token2 = '1399675839:AAGW44eSHQZ_6J5b7r2GP83IOcan8d7swVk'
   Telegram::Bot::Client.run(token2) do |bot|
     quotes = Quotes.new
