@@ -51,13 +51,13 @@ Go to the project directory and run open the `bin/bot.rb` file on your terminal.
   
   
 - Intructions command 
-   /joke return a random joke
-   /quote return a random quote
-   /time return the current time
-   /date return the current date
-   /end say goodbye
-   joke_every 10 will return the joke y the next 10 minutes
-   quote_every 10 will return a quote in the next 10 minutes
+   1. /joke return a random joke
+   2. /quote return a random quote
+   3. /time return the current time
+   4. /date return the current date
+   5. /end say goodbye
+   6. joke_every 10 will return the joke y the next 10 minutes
+   7. quote_every 10 will return a quote in the next 10 minutes
    
 ### Video
 
