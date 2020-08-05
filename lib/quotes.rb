@@ -10,4 +10,3 @@ class Quotes
     self.class.get('/api/quotes')
   end
 end
-
