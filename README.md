@@ -42,10 +42,22 @@ Set up your machine.
 
 Go to the project directory and run open the `bin/bot.rb` file on your terminal.
 
-- Instruction to use the telegram-bot
+ Instruction to use the telegram-bot
   1. Go to https://web.telegram.org/#/im?p=@Alexoid_bot.
-  2. Read the instructions.
-  3. Start to use it.
+  2. cd in the repo folder
+  3. Write (bundle install)in terminal
+  4. Write (bin/bot.rb).
+  5 Read Intructions commands
+  
+  
+- Intructions command 
+   1. /joke return a random joke
+   2. /quote return a random quote
+   3. /time return the current time
+   4. /date return the current date
+   5. /end say goodbye
+   6. joke_every 10 will return the joke y the next 10 minutes
+   7. quote_every 10 will return a quote in the next 10 minutes
 
 
 ## Authors
