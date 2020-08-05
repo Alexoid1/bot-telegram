@@ -46,8 +46,11 @@ Go to the project directory and run open the `bin/bot.rb` file on your terminal.
   1. Go to https://web.telegram.org/#/im?p=@Alexoid_bot.
   2. cd in the repo folder
   3. Write (bundle install)in terminal
+
   4. Write (bin/bot.rb)
   5. Read Intructions commands
+
+
   
   
 - Intructions command 
@@ -59,9 +62,12 @@ Go to the project directory and run open the `bin/bot.rb` file on your terminal.
    6. joke_every 10 will return the joke y the next 10 minutes
    7. quote_every 10 will return a quote in the next 10 minutes
 
+
 ### Video
 
 - Follow the link > [video](https://youtu.be/Smp9WRwCCiM)
+
+
 
 
 ## Authors
