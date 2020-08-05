@@ -39,7 +39,9 @@ end
 Telegram::Bot::Client.run(token) do |bot|
   quotes = Quotes.new
   jok = Jokes.new
-  greeting = ['Hello I am Albot', 'Hello Human', '68 65 6c 6c 6f !!!!Ohhh sorry I just say hello in my native lenguage', 'HI !!!', 'hello there', 'Whats up Dude', 'Hello meat sack... hahaha ']
+  greeting = ['Hello I am Albot', 'Hello Human',
+              '68 65 6c 6c 6f !!!!Ohhh sorry I just say hello in my native lenguage',
+              'HI !!!', 'hello there', 'Whats up Dude', 'Hello meat sack... hahaha ']
   bot.listen do |message|
     bot.api.send_message(chat_id: message.chat.id, text: greeting.sample)
     if message.text.match(/hello/)
