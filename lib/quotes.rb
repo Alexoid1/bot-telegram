@@ -1,6 +1,10 @@
+# frozen_string_literal: true
+
 require 'rubygems'
 require 'httparty'
 require 'json'
+
+# rubocop:disable Style/Documentation
 
 class Quotes
   include HTTParty
@@ -10,3 +14,4 @@ class Quotes
     self.class.get('/api/quotes')
   end
 end
+# rubocop:enable Style/Documentation
