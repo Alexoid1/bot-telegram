@@ -15,5 +15,7 @@ jobs:
         run: |
           [ -f Gemfile ] && bundle --deployment
           gem install --no-document rspec:'~>3.0'
+          gem install httparty
+          gem install telegram-bot-ruby
       - name: RSpec Report
         run: rspec --force-color --format documentation
