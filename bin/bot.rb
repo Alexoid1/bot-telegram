@@ -1,14 +1,12 @@
 #!/usr/bin/env ruby
 
-# frozen_string_literal: true
-
 require 'rubygems'
 require 'telegram/bot'
 require_relative '../lib/quotes.rb'
 require_relative '../lib/jokes.rb'
 require 'date'
 
-# rubocop:disable Metrics/BlockLength, Metrics/AbcSize, Metrics/MethodLength
+# rubocop:disable Metrics/BlockLength
 token = '1399675839:AAGW44eSHQZ_6J5b7r2GP83IOcan8d7swVk'
 
 puts 'go to the next link to use the bot'
@@ -85,4 +83,4 @@ Telegram::Bot::Client.run(token) do |bot|
     end
   end
 end
-# rubocop:enable Metrics/BlockLength, Metrics/AbcSize, Metrics/MethodLength
+# rubocop:enable Metrics/BlockLength
