@@ -59,6 +59,10 @@ Go to the project directory and run open the `bin/bot.rb` file on your terminal.
    6. joke_every 10 will return the joke y the next 10 minutes
    7. quote_every 10 will return a quote in the next 10 minutes
 
+### Video
+
+- Follow the link > [video](https://youtu.be/Smp9WRwCCiM)
+
 
 ## Authors
 
