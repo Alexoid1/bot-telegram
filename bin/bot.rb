@@ -4,7 +4,7 @@ require_relative '../lib/quotes.rb'
 require_relative '../lib/jokes.rb'
 require 'date'
 
-# rubocop:disable Metrics/BlockLength, Layout/LineLength
+# rubocop:disable Metrics/BlockLength
 token = '1399675839:AAGW44eSHQZ_6J5b7r2GP83IOcan8d7swVk'
 
 puts 'go to the next link to use the bot'
@@ -17,8 +17,10 @@ def interval_joke(time, message)
   Telegram::Bot::Client.run(token2) do |bot|
     jok = Jokes.new
     @joke = JSON.parse(jok.posts).sample
-    bot.api.send_message(chat_id: message.chat.id, text: "Listen this joke #{message.from.first_name}, '#{@joke['content']}")
-    bot.api.send_message(chat_id: message.chat.id, text: "#{message.from.first_name} will recive the next joke in #{time} minutes")
+    bot.api.send_message(chat_id: message.chat.id,
+                         text: "Listen this joke #{message.from.first_name}, '#{@joke['content']}")
+    bot.api.send_message(chat_id: message.chat.id,
+                         text: "#{message.from.first_name} will recive the next joke in #{time} minutes")
   end
 end
 
@@ -29,7 +31,8 @@ def interval_quote(time, message)
   Telegram::Bot::Client.run(token2) do |bot|
     quotes = Quotes.new
     @quo = JSON.parse(quotes.posts).sample
-    bot.api.send_message(chat_id: message.chat.id, text: "My advise to you #{message.from.first_name} is: '#{@quo['text']}'\n#{@quo['author']}")
+    bot.api.send_message(chat_id: message.chat.id,
+                         text: "My advise to you #{message.from.first_name} is: '#{@quo['text']}'\n#{@quo['author']}")
   end
 end
 
@@ -40,7 +43,8 @@ Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
     bot.api.send_message(chat_id: message.chat.id, text: greeting.sample)
     if message.text.match(/hello/)
-      bot.api.send_message(chat_id: message.chat.id, text: "Hello #{message.from.first_name} nice to meet you")
+      bot.api.send_message(chat_id: message.chat.id,
+                           text: "Hello #{message.from.first_name} nice to meet you")
     elsif message.text.match(/joke_every [0-9]{1,2}/)
       inter = message.text.scan(/[0-9]{1,2}/)[0]
       @seconds = inter.to_i
@@ -53,21 +57,26 @@ Telegram::Bot::Client.run(token) do |bot|
     case message.text
     when '/quote'
       @quo = JSON.parse(quotes.posts).sample
-      bot.api.send_message(chat_id: message.chat.id, text: "My advise to you #{message.from.first_name} is: '#{@quo['text']}'\n#{@quo['author']}")
+      bot.api.send_message(chat_id: message.chat.id,
+                           text: "My advise to you #{message.from.first_name} is: '#{@quo['text']}'\n#{@quo['author']}")
     when '/joke'
       @joke = JSON.parse(jok.posts).sample
 
-      bot.api.send_message(chat_id: message.chat.id, text: "Listen this joke #{message.from.first_name}, '#{@joke['content']}")
+      bot.api.send_message(chat_id: message.chat.id,
+                           text: "Listen this joke #{message.from.first_name}, '#{@joke['content']}")
     when '/time'
 
-      bot.api.send_message(chat_id: message.chat.id, text: "Time now #{Time.now.hour}:#{Time.now.min}")
+      bot.api.send_message(chat_id: message.chat.id,
+                           text: "Time now #{Time.now.hour}:#{Time.now.min}")
     when '/date'
 
-      bot.api.send_message(chat_id: message.chat.id, text: "Date today #{Time.now.day}/#{Time.now.month}/#{Time.now.year}")
+      bot.api.send_message(chat_id: message.chat.id,
+                           text: "Date today #{Time.now.day}/#{Time.now.month}/#{Time.now.year}")
 
     when '/end'
-      bot.api.send_message(chat_id: message.chat.id, text: "Bye #{message.from.first_name} have a nice day")
+      bot.api.send_message(chat_id: message.chat.id,
+                           text: "Bye #{message.from.first_name} have a nice day")
     end
   end
 end
-# rubocop:enable Metrics/BlockLength, Layout/LineLength
+# rubocop:enable Metrics/BlockLength
