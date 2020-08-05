@@ -1,4 +1,4 @@
-require 'telegram-bot'
+require 'telegram/bot'
 
 describe Telegram::Bot::Client do
   let(:token) { '1399675839:AAGW44eSHQZ_6J5b7r2GP83IOcan8d7swVk' }

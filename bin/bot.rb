@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'telegram-bot'
+require 'telegram/bot'
 require_relative '../lib/quotes.rb'
 require_relative '../lib/jokes.rb'
 require 'date'
