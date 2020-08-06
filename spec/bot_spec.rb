@@ -1,4 +1,8 @@
+# frozen_string_literal: true
+
 require 'telegram/bot'
+
+# rubocop:disable Metrics/BlockLength
 
 describe Telegram::Bot::Client do
   let(:token) { '1399675839:AAGW44eSHQZ_6J5b7r2GP83IOcan8d7swVk' }
@@ -37,3 +41,4 @@ describe Telegram::Bot::Client do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
