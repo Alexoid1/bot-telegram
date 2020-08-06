@@ -65,7 +65,7 @@ Go to the project directory and run open the `bin/bot.rb` file on your terminal.
 
 ### Video
 
-- Follow the link > [video](https://youtu.be/Smp9WRwCCiM)
+- Follow the link > [video]()
 
 
 
