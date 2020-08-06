@@ -1,6 +1,6 @@
-#!/usr/bin/env ruby
+# rubocop:disable Metrics/BlockLength ,Layout/LeadingCommentSpace, Style/FrozenStringLiteralComment, Metrics/AbcSize, Metrics/MethodLength, Lint/RedundantCopEnableDirective
 
-# rubocop:disable Layout/LeadingCommentSpace, Metrics/MethodLength, Lint/RedundantCopEnableDirective
+#!/usr/bin/env ruby
 
 require 'rubygems'
 require 'telegram/bot'
@@ -84,4 +84,4 @@ Telegram::Bot::Client.run(token) do |bot|
     end
   end
 end
-# rubocop:enable Layout/LeadingCommentSpace, Metrics/MethodLength, Lint/RedundantCopEnableDirective
+# rubocop:enable Metrics/BlockLength, Layout/LeadingCommentSpace, Style/FrozenStringLiteralComment, Metrics/AbcSize, Metrics/MethodLength, Lint/RedundantCopEnableDirective
