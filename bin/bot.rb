@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-# rubocop:disable Layout/LeadingCommentSpace, Metrics/MethodLength, Lint/RedundantCopEnableDirective
-
 require 'rubygems'
 require 'telegram/bot'
 require_relative '../lib/quotes.rb'
@@ -84,4 +82,3 @@ Telegram::Bot::Client.run(token) do |bot|
     end
   end
 end
-# rubocop:enable Layout/LeadingCommentSpace, Metrics/MethodLength, Lint/RedundantCopEnableDirective
