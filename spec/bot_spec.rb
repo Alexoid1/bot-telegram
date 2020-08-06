@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'telegram/bot'
 
 # rubocop:disable Metrics/BlockLength
