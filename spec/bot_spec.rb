@@ -1,7 +1,5 @@
 require 'telegram/bot'
 
-# rubocop:disable Metrics/BlockLength
-
 describe Telegram::Bot::Client do
   let(:token) { '1399675839:AAGW44eSHQZ_6J5b7r2GP83IOcan8d7swVk' }
   let(:client) { described_class.new(token, options) }
@@ -39,4 +37,3 @@ describe Telegram::Bot::Client do
     end
   end
 end
-# rubocop:enable Metrics/BlockLength
