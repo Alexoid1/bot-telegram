@@ -34,7 +34,8 @@ Style/AndOr:
 Style/DefWithParentheses:
   Enabled: false
 Style/FrozenStringLiteralComment:
-  EnforcedStyle: always
+  Enabled: true
+  EnforcedStyle: never
 Style/CaseEquality:
   Enabled: false
 
