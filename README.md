@@ -74,19 +74,18 @@ Go to the project directory and run open the `bin/bot.rb` file on your terminal.
 
 ### Video
 
-- Follow the link > [video]()
+- Follow the link > Video **...soon**
 
 ---
 
 
 
-## Authors
+## 👥 Authors
 
-👤 **Pablo Alexis Zambrano Coral**
-
-- Github: [@Alexoid1](https://github.com/Alexoid1)
-- Twitter: [@pablo_acz](https://twitter.com/pablo_acz)
-- Linkedin: [linkedin](https://www.linkedin.com/in/pablo-alexis-zambrano-coral-7a614a189/)
+* 👤 **Pablo Alexis Zambrano Coral**
+    - Github: [@Alexoid1](https://github.com/Alexoid1)
+    - Twitter: [@pablo_acz](https://twitter.com/pablo_acz)
+    - Linkedin: [linkedin](https://www.linkedin.com/in/pablo-alexis-zambrano-coral-7a614a189/)
 
 
 
@@ -98,15 +97,15 @@ Feel free to check the [issues page](issues/).
 
 
 
-## Show your support
+## 👍 Show your support
 
 Give a ⭐️ if you like this project!
 
 
 
-## Acknowledgments
+## 📚 Acknowledgments
 
-- [Thanks for Microverse][https://github.com/microverseinc]
+- Thanks for [Microverse](https://github.com/microverseinc)
 
 
 
